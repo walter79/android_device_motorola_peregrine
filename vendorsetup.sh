@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,19 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Screen size
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit from peregrine device
-$(call inherit-product, device/motorola/peregrine/device.mk)
-
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := peregrine
-PRODUCT_NAME := full_peregrine
-PRODUCT_BRAND := motorola
-PRODUCT_MODEL := peregrine
-PRODUCT_MANUFACTURER := motorola
+add_lunch_combo omni_peregrine-userdebug
